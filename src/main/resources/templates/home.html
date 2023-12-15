@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<div class="container">
+    <div>
+        <h1>Hello Spring</h1>
+        <p>회원 기능</p>
+        <p>
+            <a href="/posts">글 목록</a>
+            <a href="/posts/save" role="button" class="btn">글 등록</a>
+        </p>
+    </div>
+</div> <!-- /container -->
+</body>
+</html>
+
+
+
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="http://www.thymeleaf.org">-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--    <div>-->
+<!--        <table>-->
+<!--            <thead>-->
+<!--            <tr>-->
+<!--                <th>게시글 번호</th>-->
+<!--                <th>제목</th>-->
+<!--                <th>작성자</th>-->
+<!--                <th>최종수정일</th>-->
+<!--            </tr>-->
+<!--            </thead>-->
+<!--            <tbody id="tbody">-->
+<!--            <tr th:each="post : ${posts}">-->
+<!--                <td th:text="${post.id}"></td>-->
+<!--                <td th:text="${post.title}"></td>-->
+<!--                <td th:text="${post.author}"></td>-->
+<!--                <td th:text="${post.modifiedDate}"></td>-->
+<!--            </tr>-->
+<!--            </tbody>-->
+<!--        </table>-->
+<!--    </div>-->
+<!--</div> &lt;!&ndash; /container &ndash;&gt;-->
+<!--</body>-->
+<!--</html>-->

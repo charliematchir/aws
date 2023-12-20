@@ -22,11 +22,12 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.security:spring-security-test")
     implementation ("org.springframework.boot:spring-boot-starter-oauth2-client")
-//    implementation("org.springframework.session:spring-session-jdbc")
+    implementation("org.springframework.session:spring-session-jdbc")
 
+    runtimeOnly ("com.mysql:mysql-connector-j")
     runtimeOnly ("com.h2database:h2")
-    compileOnly ("org.projectlombok:lombok")
 
+    compileOnly ("org.projectlombok:lombok")
     annotationProcessor ("org.projectlombok:lombok")
     testImplementation ("org.springframework.boot:spring-boot-starter-test")
     testImplementation ("org.springframework.security:spring-security-test")

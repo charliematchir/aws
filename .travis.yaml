@@ -1,0 +1,20 @@
+language: java
+jdk:
+  - azul-17
+
+branches:
+  - main
+
+#Travis CI 서버 Home
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$Home/.gralde'
+
+script: "./gradlew clean build"
+
+# CI 실행 완료시 메일 알림
+notifications:
+  email:
+    recipents:
+      - charlimatchir@gmail.com
